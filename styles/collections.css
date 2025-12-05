@@ -1,0 +1,122 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    min-height: 100px;
+    margin: 0;
+    padding: 0;
+    min-width: 900px;
+}
+
+#nav-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+#title {
+    padding-top: 30px !important;
+}
+
+#content-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+    margin: 30px;
+    
+
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: min-content;
+
+    box-sizing: border-box;
+
+    background-color: rgb(39, 39, 39);
+    box-shadow: 0px 0px 20px 20px rgb(34, 34, 34);
+    border-radius: 15px;
+}
+
+#content > div {
+    padding: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#content img {
+    height: 27vh;
+    border: 12px #595959 solid;
+    border-radius: 15px;
+    margin: auto;
+}
+
+
+#content img:hover {
+    border-color: rgb(206 198 180);
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.imgContainer {
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.imgContainer > div {
+    position: relative;
+    display: flex;
+    align-content: center;
+    width: auto;
+}
+
+
+
+@media (max-width: 80vh){
+    #content {
+        width: 95vw !important;
+    }
+    #content img {
+        width: 36vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 900px){
+    #content {
+        width: 100% !important;
+        margin-top: 25%;
+    }
+    #content img {
+        width: 272px;
+        height: auto;
+    }
+    #title{
+        font-size: 50px !important;
+        padding-top: 50px !important;
+        padding-bottom: 50px;
+    }
+    #nav-elements > div {
+        font-size: 25px !important;
+    }
+    th{
+        font-size: 15px !important;
+    }
+    #nav-cont {
+        justify-content: start;
+    }
+    .drop {
+        left: 80% !important;
+    }
+    #nav-elements {
+        width: 10% !important;
+    }
+}

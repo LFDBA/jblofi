@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cument</title>
+
+    <!-- Importing Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js" defer></script>
+    <script type="text/javascript" src="scripts/contact.js"></script>
+</head>
+
+<body>
+    
+    <div id="cursor"></div>
+
+    
+    <img id="settings" src="images/settings.png" onclick="redirect('settings.html')"></img>
+    <div id="nav-cont">
+        <div id="title">
+            ORI's Art
+        </div>
+        <div id="nav">
+        
+        <div id="nav-elements">
+            
+            <div class="redirect" onclick="redirect('index.html')">home</div>
+            <div class="dropdown">
+                <text>
+                    projects
+                    <div class="drop">
+                        >
+                    </div>
+                </text>
+                
+                
+                <table class="list">
+                    <tr>
+                        <th onclick="redirect('projects/pokemon.html')">
+                            Pokemon
+                        </th>
+                    </tr>
+                    <tr>
+                        <th onclick="redirect('projects/dandit.html')">
+                            Bata Dandit
+                        </th>
+                    </tr>
+                    <tr>
+                        <th onclick="redirect('projects/undertale.html')">
+                            Undertale
+                        </th>
+                    </tr>
+                </table>
+            </div>
+            <div class="dropdown">
+                <text>
+                    collections
+                    <div class="drop">
+                        >
+                    </div>
+                </text>
+                
+                
+                <table class="list">
+                    <tr>
+                        <th onclick="redirect('collections/peace.html')">
+                            peace
+                        </th>
+                    </tr>
+                    <tr>
+                        <th onclick="redirect('collections/liminal.html')">
+                            liminal
+                        </th>
+                    </tr>
+                    <tr>
+                        <th onclick="redirect('collections/nature.html')">
+                            nature
+                        </th>
+                    </tr>
+                    <tr>
+                        <th onclick="redirect('collections/spooks.html')">
+                            spooks
+                        </th>
+                    </tr>
+                </table>
+            </div>
+            <div class="redirect" onclick="redirect('about.html')">about</div>
+            <div id="home">&nbsp;contact&nbsp;</div>
+        </div>
+        
+        </div>
+
+        <div id="content">
+            <textarea id="message" placeholder="Message for ORI..."></textarea>
+            <div id="buttons">
+                <div class="button" onclick='document.querySelector("#message").value = ""'>clear</div>
+                <div id="space"></div>
+                <div class="button" onclick="send()">send</div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,98 @@
+html, body {
+    height: 100%;
+    min-height: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-cont {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+    margin-bottom: 7vw; /* This margin controls spacing of .content from its parent's bottom */
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+
+    box-sizing: border-box;
+}
+
+#message {
+    color: rgb(246 244 240);
+    resize: none;
+    font-size: calc(2vw + 1vh);
+    background-color: rgb(39, 39, 39);
+    box-shadow: 0px 0px 20px 20px rgb(34, 34, 34);
+    width: 100%;
+    height: 100%; /* Fills the height of the flex item within .content */
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 40px;
+    caret-color:rgba(250, 235, 215, 0.522);
+}
+
+#space {
+    width: 40%;
+}
+
+#buttons {
+    width: 100%;
+    color: rgb(246 244 240);
+    font-size: 2vw; /* This applies to text directly inside .buttons or its children without own font-size */
+    background-color: rgb(39, 39, 39);
+    box-shadow: 0px 0px 20px 20px rgb(34, 34, 34);
+    height: auto;
+
+    box-sizing: border-box;
+    /* --- CRITICAL CHANGE HERE --- */
+    padding-top: 2.5vh;    /* Make padding-top symmetrical to padding-bottom */
+    padding-bottom: 2.5vh; /* Keep this value for the desired total height of .buttons */
+    padding-left: 20px;
+    padding-right: 20px;
+    /* --- END CRITICAL CHANGE --- */
+
+    border-radius: 0px 0px 15px 15px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; /* This is now effective for vertical centering #button */
+    color: rgb(168 166 162);
+    
+}
+
+.button {
+    display: flex;
+    align-items: center; /* Centers content *inside* #button */
+    transition: scale 0.4s, text-shadow 0.4s, color 0.4s;
+    border-radius: 10px;
+    cursor: pointer;
+    text-shadow: none; /* Override parent's text-shadow if any */
+    white-space: nowrap; /* Prevent button text from wrapping */
+    font-size: inherit; /* Use font-size from .buttons or define specifically */
+    text-shadow: 0px 0px 50px black, 0px 0px 100px black;
+}
+
+.button:hover {
+    color: rgba(246, 244, 240, 0.823);
+    text-shadow: 0px 0px 100px rgba(81, 81, 255, 0.4);
+    scale: 1.05;
+}

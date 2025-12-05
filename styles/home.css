@@ -1,0 +1,71 @@
+
+.imgContainer {
+  position: relative;
+  display: flex;
+  align-content: center;
+}
+
+#content {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  color: rgb(252 244 240);
+  padding-top: 20px;
+}
+#content > div {
+  width: 100%;
+  align-items: center;
+  height: calc(20vw + 15vh);
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow-y:visible;
+}
+#content img {
+  border: 12px #595959 solid;
+  border-radius: 15px;
+  margin: auto;
+  height: calc(18vw + 13vh);
+}
+
+
+#content img:hover {
+  border-color: rgb(206 198 180);
+  scale: 1.1;
+  cursor: pointer;
+}
+
+#content h1 {
+  font-size: 2.5vw; /* Base font size */
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+  line-height: 150%;
+  background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.08));
+  box-shadow: 0px 0px 100px 100px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 70vh ){
+  #content > div:nth-child(odd) h1 {
+      padding-right: 100px;
+  }
+  #content > div:nth-child(even) h1 {
+      padding-left: 100px;
+  }
+  #content > div:nth-child(even) {
+      display: flex;
+      flex-direction: row;
+  }
+  #content > div:nth-child(odd) {
+      display: flex;
+      flex-direction: row-reverse;
+  }
+  #content > div:first-child {
+      margin-top: 1vw;
+  }
+
+}
+
+

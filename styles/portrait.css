@@ -1,0 +1,16 @@
+#content h1:nth-child(even) {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+#content > div{
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    height: auto !important;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10vw;
+}
+
+#content > div:first-child{
+    margin-top: 1vw;
+}

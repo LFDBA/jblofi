@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Importing Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../styles/collections.css">
+    <link rel="stylesheet" href="../styles/base.css">
+    
+    <script src="../scripts/script.js" defer></script>
+</head>
+<body>
+    <div id="cursor"></div>
+
+    
+    <img id="settings" src="../images/settings.png" onclick="redirect('settings.html')"></img>
+    <div id="nav-cont">
+        <div>
+            <div id="title">
+                ORI's Art
+            </div>
+            <div id="nav">
+                
+                <div id="nav-elements">
+                    
+                    <div class="redirect" onclick="redirect('../index.html')">home</div>
+                    <div class="dropdown">
+                        <text>
+                            projects
+                            <div class="drop">
+                                >
+                            </div>
+                        </text>
+                        
+                        
+                        <table class="list">
+                            <tr>
+                                <th onclick="redirect('../projects/pokemon.html')">
+                                    Pokemon
+                                </th>
+                            </tr>
+                            <tr>
+                                <th onclick="redirect('../projects/dandit.html')">
+                                    Bata Dandit
+                                </th>
+                            </tr>
+                            <tr>
+                                <th onclick="redirect('../projects/undertale.html')">
+                                    Undertale
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="dropdown">
+                        <text>
+                            collections
+                            <div class="drop">
+                                >
+                            </div>
+                        </text>
+                        
+                        
+                        <table class="list">
+                            <tr>
+                                <th id="home">
+                                    &nbsp;peace&nbsp;
+                                </th>
+                            </tr>
+                            <tr>
+                                <th onclick="redirect('liminal.html')">
+                                    liminal
+                                </th>
+                            </tr>
+                            <tr>
+                                <th onclick="redirect('nature.html')">
+                                    nature
+                                </th>
+                            </tr>
+                            <tr>
+                                <th onclick="redirect('spooks.html')">
+                                    spooks
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="redirect" onclick="redirect('../about.html')">about</div>
+                    <div class="redirect" onclick="redirect('../contact.html')">contact</div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content">
+                <div class="imgContainer">
+                    <div>
+                        <img src="../images/windowcat.jpg" onclick='redirect()'>
+                        <h2>🖱️</h2> <!--🔎 -->
+                    </div>
+                </div>
+                <div class="imgContainer">
+                    <div>
+                        <img src="../images/fence.webp" onclick='redirect()'>
+                        <h2>🖱️</h2> <!--🔎 -->
+                    </div>
+                </div>
+                <div class="imgContainer">
+                    <div>
+                        <img src="../images/clint.webp" onclick='redirect()'>
+                        <h2>🖱️</h2> <!--🔎 -->
+                    </div>
+                </div>
+                <div class="imgContainer">
+                    <div>
+                        <img src="../images/snailtrail.webp" onclick='redirect()'>
+                        <h2>🖱️</h2> <!--🔎 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
